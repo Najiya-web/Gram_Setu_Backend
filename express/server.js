@@ -35,7 +35,7 @@ mongoose.connect(atlasURI)
 // Use Distributed Routes
 app.use('/api/auth', authRoutes);
 app.use('/api/reports', reportRoutes);
-app.use('/api/UserRegister',register);
+app.use('/api/userregister',register);
 app.use('/api/feedback', feedback);
 
 app.listen(port, () => console.log("MVC Server running on port" ,port));
